@@ -1,17 +1,22 @@
-pipeline{
+pipeline {
 
 agent any
-stages{
+stages {
 
-     stage('scm'){
+     stage('scm') {
+            steps {
            echo "my git code download"
+            }
 }
-     stage('deploy'){
+     stage('deploy') {
+            steps {
            echo "deploy the code"
+            }
 }
        
-     stage('test'){
+     stage('test') {
            echo "test my code"
+           }
 }
 
  
