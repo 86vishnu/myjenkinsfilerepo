@@ -16,7 +16,7 @@ stages {
        
      stage('Test') {
            steps {
-               sh 'java-jar target/*jar'
+               sh 'java -jar target/*jar'
            }
 }
 
