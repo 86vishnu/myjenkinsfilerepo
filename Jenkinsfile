@@ -3,19 +3,20 @@ pipeline {
 agent any
 stages {
 
-     stage('scm') {
+     stage('SCM') {
             steps {
-           echo "my git code download"
+               echo "my git code download"
             }
 }
-     stage('deploy') {
+     stage('Deploy') {
             steps {
-           echo "deploy the code"
+               echo "deploy the code"
             }
-}
+}  
        
-     stage('test') {
-           echo "test my code"
+     stage('Test') {
+           steps {
+               echo "test my code"
            }
 }
 
